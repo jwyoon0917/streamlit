@@ -15,6 +15,7 @@ import plotly.figure_factory as ff # 템플릿 불러오기
 from plotly.subplots import make_subplots # subplot 만들기
 from plotly.validators.scatter.marker import SymbolValidator # Symbol 꾸미기에 사용됨
 
+@st.cache_data
 def get_stock_info():
     base_url =  "http://kind.krx.co.kr/corpgeneral/corpList.do"    
     method = "download"
